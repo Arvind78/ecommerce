@@ -1,0 +1,56 @@
+.accountContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0da486ef;
+  font-size: 14px;
+  gap: 10px;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.accountInfo {
+  line-height: 14px;
+  text-transform: capitalize;
+}
+
+.accountInfo h3 {
+  color: #a0aec0;
+  font-weight: 600;
+}
+.accountInfo span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.support {
+  display: flex;
+  align-items: self-end;
+  justify-content: flex-start;
+  text-align: center;
+  gap: 8px;
+  padding-left: 10px;
+  margin-top: 30px;
+}
+
+.supportInfo {
+  line-height: 16px;
+  font-size: 15px;
+}
+
+.supportInfo h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.supportInfo span {
+  font-size: 12px;
+  color: #a0aec0;
+}

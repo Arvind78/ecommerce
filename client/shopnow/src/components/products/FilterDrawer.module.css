@@ -1,0 +1,89 @@
+.category {
+  margin: 12px 0px;
+}
+
+.category h2 {
+  font-size: 18px;
+  margin: 5px 0px;
+  font-weight: 600;
+  color: rgb(49, 54, 54);
+}
+
+.reating {
+  margin: 18px 0px;
+  line-height: 25px;
+}
+
+.reating h2 {
+  font-size: 18px;
+
+  color: rgb(49, 54, 54);
+  font-weight: 600;
+  margin: 10px 0px;
+}
+.reating span {
+  font-size: 16px;
+  height: 25px;
+  margin: 0px 10px;
+  width: 25px;
+}
+
+.price {
+  line-height: 15px;
+}
+
+.price h2 {
+  font-size: 18px;
+
+  color: rgb(49, 54, 54);
+  font-weight: 600;
+
+  margin: 10px 0px;
+}
+
+.price span {
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  color: #21ab91;
+}
+
+.size {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.size h2 {
+  font-size: 18px;
+
+  color: rgb(49, 54, 54);
+  font-weight: 600;
+  margin: 10px 0px;
+}
+.size div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.size div span {
+  background-color: rgba(248, 245, 245, 0.945);
+  width: 50px;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  margin: 5px 0px;
+  border-radius: 4px;
+  color: #21ab91;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.size div span:hover {
+  color: #fff;
+  transition: 400ms ease-in;
+  background-color: #21ab91;
+}

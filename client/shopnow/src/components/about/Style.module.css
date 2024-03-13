@@ -1,0 +1,211 @@
+.heading {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 70px;
+  font-size: 18px;
+  width: 100%;
+  color: #525151;
+  font-weight: 600;
+  background-color: rgb(236, 232, 232);
+}
+
+.heading div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.section {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  /* flex-direction: column; */
+  padding: 20px;
+}
+
+.logo {
+  width: 30%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.section div {
+  width: 40%;
+  line-height: 26px;
+}
+
+.section div p {
+  margin: 10px 0px;
+  text-align: justify;
+}
+
+.sectionTeam {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.title {
+  width: 100%;
+  background-color: rgba(211, 211, 211, 0.26);
+  text-align: center;
+  color: #0da487;
+  padding: 8px 0px;
+  font-weight: 600;
+  margin: 20px 0px;
+  font-size: 22px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+  padding: 0px 20px;
+  gap: 30px;
+}
+
+.card {
+  height: auto;
+  width: 340px;
+  padding: 25px 0px;
+  text-align: center;
+  background-color: rgba(240, 248, 255, 0.178);
+  flex-grow: 200;
+  font-size: 14px;
+  flex-shrink: 1;
+  border-radius: 5px;
+  border: 0.5px solid #0da487;
+}
+
+.card p {
+  padding: 2px 10px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transform: 300ms ease-in;
+}
+
+.cardTitle {
+  margin-top: 5px;
+  font-weight: 600;
+  color: #0da487;
+}
+
+.mapContainer {
+  height: 320px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (max-width: 1100px) {
+  .logo {
+    width: 40%;
+    height: 400px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  .heading {
+    padding: 0px 10px;
+  }
+  .section div {
+    width: 45%;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 680px) {
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 96%;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  .heading {
+    padding: 0px 10px;
+  }
+  .section div {
+    width: 96%;
+    line-height: 26px;
+  }
+
+  .section div p {
+    margin: 10px 0px;
+    text-align: justify;
+  }
+
+  .sectionTeam {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .title {
+    width: 100%;
+    background-color: rgba(211, 211, 211, 0.26);
+    text-align: center;
+    color: #0da487;
+    padding: 8px 0px;
+    font-weight: 600;
+    margin: 20px 0px;
+    font-size: 22px;
+  }
+
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    gap: 30px;
+  }
+
+  .card {
+    height: auto;
+    width: 220px;
+    padding: 25px 0px;
+    text-align: center;
+    background-color: rgba(240, 248, 255, 0.178);
+    flex-grow: 200;
+    font-size: 14px;
+    flex-shrink: 1;
+    border-radius: 5px;
+    border: 0.5px solid #0da487;
+  }
+
+  .card p {
+    padding: 2px 10px;
+  }
+
+  .card:hover {
+    transform: scale(1.02);
+    transform: 300ms ease-in;
+  }
+
+  .cardTitle {
+    margin-top: 5px;
+    font-weight: 600;
+    color: #0da487;
+  }
+}

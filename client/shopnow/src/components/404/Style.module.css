@@ -1,0 +1,95 @@
+.mainContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.heading {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 70px;
+  font-size: 18px;
+  width: 100%;
+  color: #525151;
+  font-weight: 600;
+  background-color: rgb(236, 232, 232);
+}
+.heading div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.notFoundContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.notFoundContainer img {
+  margin: 25px 0px;
+  margin-bottom: 10px;
+}
+
+.notFoundContainer p {
+  width: 45%;
+  text-align: center;
+  line-height: 30px;
+  margin: 20px 0px;
+  font-weight: 600;
+  color: #525151;
+}
+
+.notFoundContainer button {
+  background-color: #0da487;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 25px;
+  margin-bottom: 30px;
+}
+
+.notFoundContainer button:hover {
+  opacity: 0.8;
+  transition: 400ms ease-in;
+}
+
+@media (max-width: 1200px) {
+  .notFoundContainer p {
+    width: 60%;
+    text-align: center;
+    line-height: 30px;
+    margin: 20px 0px;
+  }
+  .heading {
+    padding: 0px 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .notFoundContainer p {
+    width: 80%;
+    text-align: center;
+    line-height: 30px;
+    margin: 20px 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .notFoundContainer p {
+    width: 95%;
+    text-align: center;
+    line-height: 30px;
+    margin: 20px 0px;
+  }
+}

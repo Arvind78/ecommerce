@@ -1,0 +1,104 @@
+/* .userReviewModel{
+height: 100%;
+width: 100%;
+
+} */
+
+.modalDialog {
+  width: 180px;
+  height: 300px;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  right: 130px;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  align-items: center;
+}
+
+.modalContent {
+  height: 230px;
+  width: 260px;
+  background-color: #0da487;
+  background-image: url('../../assets/image/log-in-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: inset 0px 0px 2px 1px #0da48669;
+  background-size: cover;
+  object-fit: contain;
+  border-radius: 6px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalContent input {
+  border: 1px solid #fff;
+  padding: 4px;
+  margin-bottom: 7px;
+  outline: none;
+  background-color: transparent;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+.modalContent textarea {
+  border: 1px solid #fff;
+  padding: 4px;
+  background-color: transparent;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 13px;
+  resize: none;
+}
+.modalContent input::placeholder {
+  color: #fff;
+  font-size: 13px;
+}
+.modalContent textarea::placeholder {
+  color: #fff;
+  font-size: 13px;
+}
+
+.modalContent button {
+  margin-top: 7px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #0da487;
+}
+
+.modalContent button:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.fileInput {
+  display: flex;
+  font-size: 13px;
+  color: #fff;
+  align-items: center;
+}
+
+.userReviewModel section {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.userReviewModel section span {
+  display: none;
+}
+.userReviewModel section:hover {
+  padding-right: 20px;
+
+  display: block;
+}

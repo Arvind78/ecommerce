@@ -1,0 +1,179 @@
+.reviewSlider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.reviewContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reviewContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.rating {
+  display: flex;
+  gap: 5px;
+}
+
+.star {
+  color: #f0c000;
+  font-size: 20px;
+}
+
+.content {
+  font-size: 16px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.prevButton,
+.nextButton {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5;
+}
+
+.reviewSlider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.reviewContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+.reviewContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.rating {
+  display: flex;
+  gap: 5px;
+}
+
+.star {
+  color: #f0c000;
+  font-size: 20px;
+}
+
+.content {
+  font-size: 16px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.prevButton,
+.nextButton {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  /* Button styles */
+  background-color: #f0f0f0;
+  color: #333;
+  transition: background-color 0.2s ease-in-out;
+
+  /* Hover effect */
+  &:hover {
+    background-color: #ddd;
+  }
+}
+
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+
+  /* Hide dots on small screens */
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+
+  /* Dot opacity and active state */
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+
+  &.activeDot {
+    opacity: 1;
+  }
+
+  /* Hover effect */
+  &:hover {
+    opacity: 0.8;
+  }
+}

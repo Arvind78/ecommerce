@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Account Verification Success</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      margin: 40px 0px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #666;
+    }
+
+    .login-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #28a745; /* Green background color */
+      color: #fff; /* White text color */
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .login-btn:hover {
+      background-color: #218838; /* Darker green color on hover */
+    }
+
+    .disabled {
+      background-color: #aaa; /* Grey background color */
+      pointer-events: none; /* Disable pointer events */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>User Account Verification Success</h1>
+    <p>Your user account has already been verified.</p>
+    <p>Thank you for registering with us.</p>
+    <p>You are now ready to login.</p>
+    <a href="http://localhost:5173/login" class="login-btn">Login Now </a>
+  </div>
+</body>
+</html>

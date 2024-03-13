@@ -1,0 +1,291 @@
+.mainContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.checkoutHeading {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 70px;
+  font-size: 18px;
+  width: 100%;
+  color: #525151;
+  font-weight: 600;
+  background-color: rgb(236, 232, 232);
+}
+
+.checkoutHeading div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.checkoutBody {
+  padding: 20px;
+  display: flex;
+  gap: 19px;
+  height: auto;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.checkoutBodyDeteils {
+  width: 60%;
+}
+
+.addressContainer {
+  background-color: #dfdbdb80;
+  padding: 20px 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.addressContainer b {
+  font-size: 20px;
+  color: #0da587;
+  font-size: 600;
+  display: flex;
+  align-items: center;
+  padding: 0px 3px;
+  cursor: pointer;
+}
+
+.addressContainer h4 {
+  font-size: 14px;
+  font-size: 600;
+  color: #0da587;
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.address {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.addressItem {
+  background-color: #fff;
+  padding: 10px;
+  width: auto;
+  flex-grow: 1;
+  flex-shrink: 200;
+  margin: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.addressItem div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.addressItem section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  text-transform: capitalize;
+}
+
+.addressItem div span {
+  background-color: #0da587;
+  color: #fff;
+  padding: 0px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addressPopBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 25px;
+}
+
+.addressPopBtn h3 {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.checkoutSummary {
+  width: 300px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  position: sticky;
+  top: 80px;
+  background-color: #f8f8f8;
+}
+
+.item {
+  display: flex;
+  align-items: space-between;
+  padding: 10px 10px;
+  gap: 9px;
+  width: 100%;
+}
+
+.item img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.item div h4 {
+  font-size: 12px;
+  width: fit-content;
+}
+
+.item div span {
+  font-size: 12px;
+  width: 200px;
+}
+
+.productName {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.item div p {
+  font-size: 11px;
+  color: #0da587;
+  font-weight: 600;
+}
+
+.CheckoutInfo {
+  background-color: #fff;
+  padding: 10px 10px;
+  margin: 16px 0px;
+  border-radius: 8px;
+}
+
+.CheckoutInfo div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px;
+  margin: 10px 0px;
+  font-size: 13px;
+}
+
+.CheckoutInfo button {
+  width: 100%;
+  background-color: #ff4f4f;
+  padding: 8px 10px;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 400;
+  margin: 8px 0px;
+}
+
+.CheckoutInfo button:hover {
+  opacity: 0.8;
+  transition: 0.5s ease-in-out;
+}
+
+.deleveryOption {
+  height: auto;
+  margin: 10px 0px;
+  padding: 0px 25px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  background-color: #dfdbdb80;
+}
+
+.deleveryOption h2 {
+  padding: 10px 2px;
+  font-weight: 800;
+}
+
+.cashOnDelevary {
+  display: flex;
+  gap: 10px;
+  background-color: #f8f8f8;
+  width: 40%;
+  padding: 15px 15px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.paypal {
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+  background-color: #f8f8f8;
+  width: 40%;
+  border-radius: 5px;
+  padding: 15px 15px;
+}
+
+.paymentMethod {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0px;
+}
+
+@media (max-width: 720px) {
+  .checkoutBody {
+    padding: 20px;
+    display: flex;
+    gap: 19px;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-evenly;
+    align-items: start;
+  }
+
+  .checkoutSummary {
+    width: 100%;
+  }
+
+  .checkoutBodyDeteils {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .paymentMethod {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px;
+    flex-wrap: wrap;
+  }
+
+  .cashOnDelevary {
+    display: flex;
+    gap: 10px;
+    background-color: #f8f8f8;
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 5px;
+    flex-grow: 1;
+    flex-shrink: 200;
+    font-weight: 600;
+    margin: 10px 0px;
+  }
+
+  .paypal {
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+    background-color: #f8f8f8;
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px 15px;
+  }
+
+  .paymentMethod {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0px;
+  }
+}

@@ -1,0 +1,184 @@
+.dashboardContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.sideMenu {
+  background-color: #212b36;
+  width: 18%;
+  color: #fff;
+  transition: width 0.3s ease;
+}
+
+.mainContent {
+  height: 100%;
+  overflow-y: scroll;
+  width: 82%;
+  background-color: #fff;
+  transition: width 0.3s ease;
+  z-index: 6;
+}
+
+.headerSection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 35px;
+  padding-left: 20px;
+  position: sticky;
+  height: 60px;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 20, 0.08),
+    0 1px 2px rgba(0, 0, 20, 0.08);
+}
+
+.menuToggleIcon {
+  font-size: 26px;
+  color: #323233;
+  cursor: pointer;
+}
+
+.avatarIcon {
+  cursor: pointer;
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: contain;
+}
+
+.mainContentExpanded {
+  width: 100vw;
+  background-color: #fff;
+  z-index: 6;
+}
+
+.sideMenuExpanded {
+  width: 0;
+  background-color: #212b36;
+  color: #fff;
+}
+
+.optionMenu {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+
+.optionMenu span {
+  cursor: pointer;
+}
+
+/* sidebar  */
+.headerTitle {
+  height: 60px;
+  /* background-color: #fff; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 0.2px solid #ccccccad;
+  font-size: 16px;
+  gap: 10px;
+  font-weight: 600;
+  padding: 0px 20px;
+  /* border-right: 2px solid #ccc; */
+}
+
+.Logo {
+  font-size: 24px;
+  border-radius: 4px;
+  padding: 0px 12px;
+  background-color: #38a169;
+}
+
+.menuOption {
+  padding: 10px 5px;
+}
+
+@media (max-width: 1200px) {
+  .sideMenu {
+    background-color: #212b36;
+    width: 25%;
+    color: #fff;
+    transition: width 0.3s ease;
+  }
+
+  .mainContent {
+    width: 75%;
+    background-color: #fff;
+    transition: width 0.3s ease;
+    z-index: 6;
+  }
+}
+
+@media (max-width: 900px) {
+  .sideMenu {
+    background-color: #212b36;
+    width: 30%;
+    color: #fff;
+    transition: width 0.3s ease;
+  }
+
+  .mainContent {
+    width: 70%;
+    background-color: #fff;
+    transition: width 0.3s ease;
+    z-index: 6;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    width: 100%;
+  }
+
+  .sideMenu {
+    width: 100%;
+  }
+
+  .sideMenuExpanded {
+    width: 32%;
+  }
+
+  .mainContentExpanded {
+    width: 68%;
+  }
+
+  .menuToggleIcon {
+    display: block;
+  }
+
+  .sideMenu {
+    width: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .sideMenuExpanded {
+    width: 50%;
+  }
+
+  .mainContentExpanded {
+    width: 40%;
+  }
+  .menuToggleIcon {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .sideMenuExpanded {
+    width: 55%;
+  }
+
+  .mainContentExpanded {
+    width: 45%;
+  }
+  .menuToggleIcon {
+    display: block;
+  }
+}

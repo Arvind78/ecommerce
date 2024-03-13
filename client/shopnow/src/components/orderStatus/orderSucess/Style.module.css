@@ -1,0 +1,63 @@
+/* Style.module.css */
+.orderSuccessContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  line-height: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  background-image: url('../../../assets/image/log-in-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-weight: 500;
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+
+.checkmarkContainer {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.checkmark {
+  color: #fff;
+}
+.orderDetails {
+  text-align: center;
+}
+
+.trackingId {
+  font-weight: bold;
+}
+
+.orderSuccessContainer button {
+  background-color: #fff;
+  color: #000;
+  border-radius: 6px;
+  padding: 6px 25px;
+  font-size: 14px;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.orderSuccessContainer button:hover {
+  opacity: 0.8;
+  transition: 400ms ease-in;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .orderSuccessContainer {
+    flex-direction: column;
+  }
+
+  .checkmarkContainer {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}

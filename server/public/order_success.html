@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Success</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+  <title>Order Canceled</title>
+  <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Madimi One", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+      }
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://iili.io/JWM5wEg.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    .orderSuccessContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+         color: green;
+ 
+    }
+    .checkmarkContainer {
+      margin-bottom: 10px;
+    }
+    .checkmark {
+      width: 100px;
+      height: 100px;
+      color: green;
+    }
+    .orderDetails {
+      text-align: center;
+    }
+    .actions {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    button, a {
+      padding: 10px 20px;
+      background-color:green;
+
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+    button:hover, a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="orderSuccessContainer">
+    <div class="checkmarkContainer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="checkmark">
+        <circle cx="12" cy="12" r="10" stroke="green" stroke-width="2" fill="none"/>
+        <path d="M18 7.5L10.5 15l-4.5-4.5" stroke="green" stroke-width="2" fill="none"/>
+      </svg>
+    </div>
+    <div class="orderDetails">
+      <h2>Order Successful!</h2>
+      <p>Your order has been placed successfully.</p>
+    </div>
+    <div class="actions">
+      <p>To view your order details and track the shipment,<br />please check your email and open Gmail.</p>
+    </div>
+    <a href="/">Back To Home</a>
+  </div>
+</body>
+</html>

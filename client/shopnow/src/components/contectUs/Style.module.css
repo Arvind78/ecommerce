@@ -1,0 +1,515 @@
+.mainContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: auto;
+  overflow: hidden;
+}
+
+.heading {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 70px;
+  font-size: 18px;
+  width: 100%;
+  color: #525151;
+  font-weight: 600;
+  background-color: rgb(236, 232, 232);
+}
+
+.heading div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.contactContainer {
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding: 20px 0px;
+}
+
+.imgContainer {
+  width: 40%;
+  background-color: #fff;
+  padding: 20px 40px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color:#525151; */
+}
+
+.image img {
+  width: 80%;
+  height: 300px;
+  /* background-color:#FF5353; */
+  margin: 10px 0px;
+}
+
+.otherInfo {
+}
+
+.headingContact {
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #0da487;
+  margin: 10px 0px;
+}
+
+.otherInfo .addressDeteils {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f8f8f8;
+  margin: 12px 5px;
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 5px;
+}
+.icon {
+  background-color: #0da487;
+  color: #fff;
+  height: 35px;
+  width: 35px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.otherInfo .addressDeteils div {
+  line-height: 18px;
+}
+
+.otherInfo .addressDeteils div h2 {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.otherInfo .addressDeteils div span {
+  font-weight: 400;
+  font-size: 14px;
+}
+.formContainer {
+  width: 40%;
+}
+
+.formHeading {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.formContainer form {
+  height: 100%;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+
+.groupFiled {
+  margin: 8px 0px;
+  line-height: 26px;
+}
+
+.groupFiled label {
+  /* margin:10px 0px; */
+  font-size: 15px;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 2px 10px;
+  border-radius: 5px;
+  /* margin:6px 0px; */
+}
+
+.textGroup {
+  display: flex;
+  align-items: start;
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  gap: 10px;
+}
+.chatIcon {
+  margin: 4px 0px;
+}
+.textGroup textarea {
+  width: 100%;
+  outline: none;
+  font-size: 13px;
+}
+
+.inputGroup input {
+  padding: 10px;
+  width: 100%;
+  /* margin: 5px 0px; */
+  outline: none;
+  font-size: 13px;
+}
+.inputGroup input::placeholder,
+.textGroup textarea::placeholder {
+  font-size: 13px;
+}
+
+.formBtn {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0px 10px 0px;
+  width: 100%;
+}
+
+.formBtn button {
+  font-size: 15px;
+  background-color: #ff5353;
+  padding: 10px 15px;
+  border-radius: 4px;
+  display: flex;
+  width: 140px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.mapContainer {
+  height: 400px;
+}
+
+@media (max-width: 820px) {
+  .contactContainer {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+  }
+
+  .imgContainer {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 40px;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:#525151; */
+  }
+
+  .image img {
+    width: 70%;
+    height: 300px;
+    /* background-color:#FF5353; */
+    margin: 10px 0px;
+  }
+
+  .otherInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .headingContact {
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #0da487;
+    margin: 10px 0px;
+  }
+
+  .otherInfo .addressDeteils {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f8f8f8;
+    margin: 12px 5px;
+    width: 47%;
+    padding: 12px 10px;
+    border-radius: 5px;
+  }
+  .icon {
+    background-color: #0da487;
+    color: #fff;
+    height: 35px;
+    width: 35px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .otherInfo .addressDeteils div {
+    line-height: 18px;
+  }
+
+  .otherInfo .addressDeteils div h2 {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .otherInfo .addressDeteils div span {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .formContainer {
+    width: 90%;
+  }
+
+  .formHeading {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0px;
+  }
+
+  .formContainer form {
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px 40px;
+    border-radius: 8px;
+  }
+
+  .groupFiled {
+    margin: 8px 0px;
+    line-height: 26px;
+  }
+
+  .groupFiled label {
+    /* margin:10px 0px; */
+    font-size: 15px;
+  }
+
+  .inputGroup {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 2px 10px;
+    border-radius: 5px;
+    /* margin:6px 0px; */
+  }
+
+  .textGroup {
+    display: flex;
+    align-items: start;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    gap: 10px;
+  }
+  .chatIcon {
+    margin: 4px 0px;
+  }
+  .textGroup textarea {
+    width: 100%;
+    outline: none;
+  }
+
+  .inputGroup input {
+    padding: 10px;
+    width: 100%;
+    /* margin: 5px 0px; */
+    outline: none;
+  }
+  .inputGroup input::placeholder,
+  .textGroup textarea::placeholder {
+    font-size: 13px;
+  }
+
+  .formBtn {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0px 10px 0px;
+    width: 100%;
+  }
+
+  .formBtn button {
+    font-size: 15px;
+    background-color: #ff5353;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #fff;
+  }
+  .heading {
+    padding: 0px 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .contactContainer {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+  }
+
+  .imgContainer {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 20px;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:#525151; */
+  }
+
+  .image img {
+    width: 95%;
+    height: 250px;
+    /* background-color:#FF5353; */
+    margin: 10px 0px;
+  }
+
+  .otherInfo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .headingContact {
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #0da487;
+    margin: 10px 0px;
+  }
+
+  .otherInfo .addressDeteils {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f8f8f8;
+    margin: 12px 5px;
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 5px;
+  }
+  .icon {
+    background-color: #0da487;
+    color: #fff;
+    height: 35px;
+    width: 35px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .otherInfo .addressDeteils div {
+    line-height: 18px;
+  }
+
+  .otherInfo .addressDeteils div h2 {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .otherInfo .addressDeteils div span {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .formContainer {
+    width: 92%;
+  }
+
+  .formHeading {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0px;
+  }
+
+  .formContainer form {
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px 20px;
+    border-radius: 8px;
+  }
+
+  .groupFiled {
+    margin: 8px 0px;
+    line-height: 26px;
+  }
+
+  .groupFiled label {
+    /* margin:10px 0px; */
+    font-size: 15px;
+  }
+
+  .heading {
+    padding: 0px 20px;
+  }
+
+  .inputGroup {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 2px 10px;
+    border-radius: 5px;
+    /* margin:6px 0px; */
+  }
+
+  .textGroup {
+    display: flex;
+    align-items: start;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    gap: 10px;
+  }
+  .chatIcon {
+    margin: 4px 0px;
+  }
+  .textGroup textarea {
+    width: 100%;
+    outline: none;
+  }
+
+  .inputGroup input {
+    padding: 10px;
+    width: 100%;
+    /* margin: 5px 0px; */
+    outline: none;
+  }
+  .inputGroup input::placeholder,
+  .textGroup textarea::placeholder {
+    font-size: 13px;
+  }
+
+  .formBtn {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0px 10px 0px;
+    width: 100%;
+  }
+
+  .formBtn button {
+    font-size: 15px;
+    background-color: #ff5353;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #fff;
+  }
+  .mapContainer {
+    height: 300px;
+  }
+}

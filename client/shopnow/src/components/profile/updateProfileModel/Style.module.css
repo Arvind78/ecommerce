@@ -1,0 +1,266 @@
+.mainConatiner {
+  height: 100%;
+}
+
+.edit {
+  cursor: pointer;
+  color: #fffffff6;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+  height: auto;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #0da487;
+}
+
+.heading h3 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 15px;
+  /* font-style: italic; */
+}
+
+.heading button {
+  color: #ffffff;
+  background-color: #0da487;
+  padding: 3px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  align-items: end;
+  gap: 10px;
+}
+
+.updateBtn {
+  background-color: #0da487;
+  color: #ffffff;
+  padding: 6px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.cancelBtn {
+  background-color: #ffffff;
+  color: #0da487;
+  padding: 5px 15px;
+  border: 1px solid #0da487;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.updateBtn:hover {
+  background-color: #14be9cf5;
+  transition: all 0.3s ease 0s;
+}
+
+.cancelBtn:hover {
+  background-color: #0da487;
+  color: #ffffff;
+  transition: all 0.3s ease 0s;
+}
+
+.form {
+  display: flex;
+  flex-direction: space-between;
+  gap: 10px;
+  width: 100%;
+  padding: 15px 12px;
+  color: #000000;
+}
+
+.form .profileImage {
+  width: 40%;
+}
+
+.avatar {
+}
+
+.profileImage img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  position: relative;
+}
+
+.profileImage label {
+  position: absolute;
+  cursor: pointer;
+  top: 29%;
+  /* left:35.2%; */
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e2dfdfcc;
+  /* background-color:#0DA487; */
+}
+
+.form .detailInput {
+  width: 55%;
+  padding: 1px 10px;
+}
+
+.detailInput div {
+  width: 100%;
+}
+
+.detailInput div label,
+.detailInput div label {
+  font-size: 14px;
+  /* font-weight: 600; */
+  margin: 0px 2px;
+}
+
+.detailInput div input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  border: 1px solid lightgray;
+}
+
+.detailInput div input::placeholder {
+  font-size: 14px;
+}
+
+.detailInput div textarea {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  padding: 8px 10px;
+}
+
+.detailInput div textarea::placeholder {
+  font-size: 14px;
+}
+
+@media (max-width: 1060px) {
+  .modalContent {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media (max-width: 950px) {
+  .modalContent {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 65%;
+    height: auto;
+  }
+}
+
+@media (max-width: 780px) {
+  .modalContent {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media (max-width: 680px) {
+  .modalContent {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .modalContent {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalContent {
+    background-color: #ffffff;
+    padding: 20px 10px;
+    border-radius: 10px;
+    width: 96%;
+    height: auto;
+  }
+  .form {
+    display: flex;
+    flex-direction: space-between;
+    gap: 10px;
+    width: 100%;
+    padding: 15px 12px;
+    color: #000000;
+  }
+
+  .profileImage img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    position: relative;
+  }
+
+  .form .detailInput {
+    width: 100%;
+    padding: 10px 10px;
+  }
+
+  .profileImage label {
+    position: absolute;
+    cursor: pointer;
+    top: 26%;
+    left: 8%;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e2dfdfcc;
+    /* background-color:#0DA487; */
+  }
+}

@@ -1,0 +1,159 @@
+.TrackOrder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.TrackOrder input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 30%;
+  outline: none;
+}
+
+.TrackOrder button {
+  padding: 10px 20px;
+  background-color: #0da487;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.productContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.products {
+  display: flex;
+  flex-grow: 200;
+  flex-shrink: 1;
+  margin: 10px 6px;
+  gap: 5px;
+  width: 330px;
+}
+
+.products img {
+  height: 100px;
+  border-radius: 10px;
+  width: 400px;
+  object-fit: contain;
+}
+
+.products h2 {
+  font-size: 14px;
+  margin: 5px 0px;
+}
+
+.orderDetailInfo {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 25px 0px 10px 0px;
+}
+
+.orderDetailInfo p {
+  background-color: #0da487;
+  flex-grow: 200;
+  flex-shrink: 1;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 5px;
+  padding: 10px 0px;
+  /* width: 150px; */
+  text-wrap: wrap;
+}
+
+@media (max-width: 700px) {
+  .TrackOrder input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 60%;
+    outline: none;
+    margin-top: 10px;
+  }
+
+  .TrackOrder button {
+    padding: 10px 20px;
+    background-color: #0da487;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .productContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .products {
+    display: flex;
+    flex-grow: 200;
+    flex-shrink: 1;
+    margin: 10px 6px;
+    gap: 5px;
+    width: 330px;
+  }
+
+  .products img {
+    height: 100px;
+    border-radius: 10px;
+    width: 400px;
+    object-fit: contain;
+  }
+
+  .products h2 {
+    font-size: 12px;
+    margin: 5px 0px;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 560px) {
+  .productContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .products {
+    display: flex;
+    flex-grow: 200;
+    flex-shrink: 1;
+    margin: 10px 6px;
+    gap: 5px;
+    flex-wrap: wrap;
+    width: 330px;
+  }
+
+  .products img {
+    height: 140px;
+    border-radius: 10px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .products h2 {
+    font-size: 12px;
+    margin: 5px 0px;
+    text-align: justify;
+  }
+}

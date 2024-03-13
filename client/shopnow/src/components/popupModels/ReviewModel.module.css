@@ -1,0 +1,159 @@
+.model {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f1f1e8;
+  z-index: 99;
+}
+
+.modelContent {
+  width: 35%;
+  height: auto;
+  background-color: #fffffff3;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.modelHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.modelHeader h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.modelHeader span {
+  background-color: #0da487;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.product {
+  display: flex;
+  background-color: rgba(243, 239, 239, 0.637);
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: start;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0px;
+}
+
+.product img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.productTitle {
+  font-size: 14px;
+  color: #0da487;
+  text-transform: capitalize;
+}
+
+.product span {
+  font-size: 14px;
+}
+
+.reatingContent {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.reatingContent textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  outline: none;
+  margin-top: 10px;
+}
+
+.reatingContent {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.reatingContent span {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 10px;
+  padding: 0px 8px;
+  justify-content: start;
+}
+
+.modelFooter {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 15px;
+  padding: 0px 10px;
+}
+
+.modelFooter button {
+  width: fit-content;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+.saveBtn {
+  background-color: #0da487 !important;
+  border: 1px solid #0da487;
+  color: #fff !important;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+.closeModelBtn {
+  background-color: #fff !important;
+  border: 1px solid #0da487;
+  color: #0da487 !important;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #0da486be !important;
+  color: #fff !important;
+  transition: 0.5s;
+}
+
+.popupBtn {
+  margin: 10px 0px;
+  background-color: #0da487;
+  width: 100%;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 0px;
+  font-size: 16px;
+  margin: 20px 0px;
+}
+
+@media (max-width: 1100px) {
+  .modelContent {
+    width: 460px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .modelContent {
+    width: 96% !important;
+  }
+}

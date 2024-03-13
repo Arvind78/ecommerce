@@ -1,0 +1,60 @@
+.enquiryDetailContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 10px 5px;
+}
+
+.enquiryDetailContainer div {
+  color: rgb(31, 30, 30);
+  flex-grow: 200;
+  padding: 10px 5px;
+  flex-basis: 200px;
+  font-weight: 500;
+  border-radius: 5px;
+  flex-shrink: 1;
+}
+
+.enquiryDetailContainer div h2 {
+  font-weight: 800;
+  color: #504f4f;
+}
+
+.enquiryDetailContainer div span {
+  font-weight: 800;
+  color: #413e3e;
+}
+.first {
+  background-color: #f6e1ea !important;
+}
+.second {
+  background-color: #31b4fe !important;
+}
+.third {
+  background-color: #fe8357 !important;
+}
+.fourth {
+  background-color: #716dce !important;
+}
+.fifth {
+  background-color: #849ec7 !important;
+}
+.sixth {
+  background-color: #2be68a !important;
+}
+
+.searchInputContainer {
+  width: 100%;
+  margin: 20px 0px 10px 0px;
+  padding: 10px 10px;
+}
+
+.searchInputContainer input {
+  width: 200px;
+  padding: 7px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}

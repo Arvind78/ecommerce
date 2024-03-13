@@ -1,0 +1,152 @@
+/* Footer.module.css */
+.footer {
+  background-color: #1d2328;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 14px;
+  color: #bfbfbf;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  margin-bottom: 5px;
+}
+
+.link {
+  color: #bfbfbf;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.link:hover {
+  color: #ff9900;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: white;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.icon:hover {
+  color: #ff9900;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 40px;
+}
+.bottom {
+  background-color: #1d2328;
+  border-top: 1px dashed #dfdedc;
+}
+.support {
+  border-bottom: 1px dashed #dfdedc;
+  padding: 10px 0px;
+  width: fit-content;
+}
+
+.support div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.copy {
+  font-size: 14px;
+  margin: 0;
+}
+
+.payment {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .section {
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 550px) {
+  .container2 {
+    display: block;
+    line-height: 40px;
+    padding: 10px 20px;
+  }
+
+  .copy {
+    font-size: 14px;
+  }
+  .social {
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+  }
+  .payment {
+    height: 100%;
+    width: 100%;
+  }
+  .payment img {
+    height: 26px;
+    width: 70%;
+  }
+}

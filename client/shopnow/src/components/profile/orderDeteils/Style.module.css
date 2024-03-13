@@ -1,0 +1,10 @@
+.mainContainer {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 400) {
+  .paymentTag {
+    font-size: 10px;
+  }
+}

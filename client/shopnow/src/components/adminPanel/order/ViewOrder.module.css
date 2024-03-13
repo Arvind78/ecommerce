@@ -1,0 +1,204 @@
+.mainContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 45;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modalContent {
+  width: 42%;
+
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 0px;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+}
+
+.modalHeader h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(63, 63, 63, 0.733);
+}
+
+.modalHeader button {
+  background-color: #32915e;
+  height: 25px;
+  width: 25px;
+  font-weight: 500;
+  color: aliceblue;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.order {
+  height: 350px;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.modelBody div span {
+  color: rgb(7, 7, 7);
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.modelBody div p {
+  color: black;
+  font-size: 12px;
+}
+
+.orderInfoCart {
+  flex-grow: 200;
+  flex-shrink: 1;
+
+  text-align: center;
+  background-color: #32915e;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.orderInfoCart p {
+  font-weight: 500;
+  color: #fff !important;
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px 8px;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 12px;
+}
+.item img {
+  height: 70px;
+  width: 100px;
+  object-fit: contain;
+}
+
+.item p {
+  text-align: left;
+}
+.itemInfo section {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.itemInfo span {
+  padding: 0px 5px;
+  text-align: start;
+}
+.itemDetails p {
+  font-size: 14px;
+}
+
+.itemDetails p:first-child {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.address {
+  margin: 6px 5px;
+}
+.addressInfo {
+  text-align: start;
+}
+.addressInfo span {
+  padding: 0px 0px;
+  padding-right: 5px;
+}
+
+.update {
+  text-align: end;
+  width: 100%;
+  margin: 7px;
+}
+.update h2 {
+  color: #ff4d4f;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px 90px 7px 0px;
+}
+
+.update select {
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #32915e;
+  outline: none;
+}
+.update button {
+  margin: 0px 8px;
+  background-color: #32915e;
+  color: #fff;
+  height: 30px;
+  width: 80px;
+  border-radius: 5px;
+}
+
+.update button:hover {
+  transition: 350ms ease-in-out;
+  background-color: #32705e;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 40px;
+}
+
+.modalFooter button {
+  background-color: #ff4d4f;
+  color: #fff;
+  padding: 5px 18px;
+  border-radius: 6px;
+}
+
+@media (max-width: 991px) {
+  .modalContent {
+    width: 70%;
+  }
+}
+
+@media (max-width: 767px) {
+  .modalContent {
+    height: auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .modalContent {
+    height: auto;
+    width: 97%;
+  }
+}

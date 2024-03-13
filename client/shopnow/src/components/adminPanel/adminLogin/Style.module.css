@@ -1,0 +1,445 @@
+/* Styles for the main container */
+.mainContainer {
+  height: 100%;
+  width: 100%;
+}
+
+/* Styles for the login container */
+.loginContainer {
+  height: 100%;
+  width: 100%;
+}
+
+/* Styles for the login heading */
+.loginHeading {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 70px;
+  font-size: 18px;
+  width: 100%;
+  color: #525151;
+  font-weight: 600;
+  background-color: rgb(236, 232, 232);
+}
+
+/* Styles for the elements inside the login heading */
+.loginHeading div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+/* Styles for the form container */
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  background-image: url('../../../assets/image/log-in-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Styles for the form */
+.form {
+  height: auto;
+  width: 30%;
+  background-color: #f0efef;
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+
+/* Styles for the form heading */
+.formHeading {
+  line-height: 25px;
+}
+
+/* Styles for the form heading titles */
+.formHeading h2 {
+  font-weight: 600;
+  font-size: 19px;
+  color: #525151;
+}
+
+.formHeading h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #535151;
+  margin: 5px 0px;
+}
+
+/* Styles for the form input container */
+.formInput {
+  flex-direction: column;
+  display: flex;
+  margin: 5px 0px;
+}
+
+/* Styles for the form inputs */
+.formInput input {
+  padding: 9px 8px;
+  border: 0.5px solid rgb(235, 231, 231);
+  margin: 8px 0px;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  color: #5c5c5c;
+}
+
+/* Styles for the form input placeholders */
+.formInput input::placeholder {
+  font-size: 13px;
+}
+
+/* Styles for the forget password container */
+.forgetContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  font-size: 14px;
+  margin: 10px 0px;
+  padding: 0px 5px;
+}
+
+/* Styles for the forget password link */
+.forgetContainer a {
+  color: #39b9d1;
+  cursor: pointer;
+}
+
+/* Styles for the login button */
+.formBtn {
+  text-align: center;
+  background-color: #ff6464;
+  width: 100%;
+  color: #fff;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0px;
+  border-radius: 5px;
+}
+
+.formBtn:hover {
+  background-color: #ff4444;
+  transition: 300ms ease-in-out;
+}
+
+/* Styles for the "not account" section */
+.notAccount {
+  text-align: center;
+  margin: 5px 0px;
+}
+
+.notAccount p {
+  font-weight: 400;
+}
+
+.notAccount span {
+  color: #39b9d1;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Styles for the horizontal line with "OR" */
+.orLine {
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  margin: 20px 0px 8px 0px;
+  font-weight: 600;
+  color: #5c5c5c;
+}
+
+.orLine::before,
+.orLine::after {
+  display: inline-block;
+  content: '';
+  border-top: 2px solid #c7c7c7;
+  width: 7rem;
+  margin: 0 5px;
+  transform: translateY(-0.2rem);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .formContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+  }
+
+  .imgContainer {
+    height: auto;
+    width: 40%;
+    margin: 20px 0px;
+  }
+
+  .imgContainer img {
+    height: 80%;
+    width: 80%;
+  }
+
+  .form {
+    height: auto;
+    width: 40%;
+    background-color: #f0efef;
+    padding: 20px 40px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .imgContainer {
+    height: auto;
+    width: 45%;
+    margin: 20px 0px;
+  }
+
+  .imgContainer img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .form {
+    height: auto;
+    width: 40%;
+    background-color: #f0efef;
+    padding: 20px 40px;
+    border-radius: 8px;
+  }
+
+  .orLine::before,
+  .orLine::after {
+    display: inline-block;
+    content: '';
+    border-top: 2px solid #d8d4d4;
+    width: 5rem;
+    margin: 0 5px;
+    transform: translateY(-0.2rem);
+  }
+}
+
+@media (max-width: 840px) {
+  .formContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+  }
+
+  .imgContainer {
+    height: 400px;
+    width: 40%;
+    /* display: none; */
+    margin: 20px 0px;
+    /* background-color:#525151; */
+  }
+
+  .imgContainer img {
+    height: 80%;
+    width: 100%;
+  }
+
+  .form {
+    width: 50%;
+    padding: 20px 15px;
+  }
+
+  .loginHeading {
+    padding: 0px 20px;
+  }
+
+  .orLine::before,
+  .orLine::after {
+    display: inline-block;
+    content: '';
+    border-top: 2px solid #d8d4d4;
+    width: 6rem;
+    margin: 0 5px;
+    transform: translateY(-0.2rem);
+  }
+}
+
+@media (max-width: 740px) {
+  .formContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+  }
+
+  .imgContainer {
+    height: 500px;
+    width: 40%;
+    /* display: none; */
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:#525151; */
+  }
+
+  .imgContainer img {
+    height: 60%;
+    width: 100%;
+  }
+
+  .form {
+    width: 50%;
+    padding: 20px 15px;
+  }
+
+  .loginHeading {
+    padding: 0px 20px;
+  }
+
+  .orLine::before,
+  .orLine::after {
+    display: inline-block;
+    content: '';
+    border-top: 2px solid #d8d4d4;
+    width: 6rem;
+    margin: 0 5px;
+    transform: translateY(-0.2rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .formContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+  }
+
+  .imgContainer {
+    height: auto;
+    width: 40%;
+    display: none;
+    margin: 20px 0px;
+  }
+
+  .imgContainer img {
+    height: 80%;
+    width: 80%;
+  }
+
+  .form {
+    width: 80%;
+  }
+
+  .loginHeading {
+    padding: 0px 20px;
+  }
+
+  .orLine::before,
+  .orLine::after {
+    display: inline-block;
+    content: '';
+    border-top: 2px solid #d8d4d4;
+    width: 6rem;
+    margin: 0 5px;
+    transform: translateY(-0.2rem);
+  }
+}
+
+@media (max-width: 500px) {
+  .formContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+  }
+
+  .imgContainer {
+    height: auto;
+    width: 40%;
+    display: none;
+    margin: 20px 0px;
+  }
+
+  .imgContainer img {
+    height: 80%;
+    width: 80%;
+  }
+
+  .form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .loginHeading {
+    padding: 0px 15px;
+  }
+
+  .orLine::before,
+  .orLine::after {
+    display: inline-block;
+    content: '';
+    border-top: 2px solid #d8d4d4;
+    width: 6rem;
+    margin: 0 5px;
+    transform: translateY(-0.2rem);
+  }
+}
+
+@media (max-width: 400px) {
+  .formContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+  }
+
+  .imgContainer {
+    height: auto;
+    width: 40%;
+    display: none;
+    margin: 20px 0px;
+  }
+
+  .imgContainer img {
+    height: 80%;
+    width: 80%;
+  }
+
+  .form {
+    width: 96%;
+    padding: 20px 10px;
+  }
+
+  .loginHeading {
+    padding: 0px 15px;
+  }
+
+  .orLine::before,
+  .orLine::after {
+    display: inline-block;
+    content: '';
+    border-top: 2px solid #d8d4d4;
+    width: 6rem;
+    margin: 0 5px;
+    transform: translateY(-0.2rem);
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <title>Order Canceled</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Madimi One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            line-height: 30px;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            background-image: url('https://www.kraftwerk.at/app/uploads/fly-images/962/reference-img-worlds-of-adventure-park-4-1920x9999.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: black;
+            font-weight: 500;
+            background-color: #fff;
+color:red;
+        }
+
+        .cancel-title {}
+
+        .cancel-button {
+            background-color:red;
+
+            color: #fff;
+            border-radius: 6px;
+            padding: 8px 25px;
+            text-decoration: none;
+            margin-bottom: 30px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="svg-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width: 100px; height: 100px; color: red;">
+            <circle cx="12" cy="12" r="10" stroke="red" stroke-width="2" fill="none" />
+            <line x1="8" y1="8" x2="16" y2="16" stroke="red" stroke-width="2" />
+            <line x1="8" y1="16" x2="16" y2="8" stroke="red" stroke-width="2" />
+        </svg>
+    </div>
+    <div class="cancel-title">
+        <h2>Order Canceled</h2>
+        <p>Your order has been canceled.</p>
+    </div>
+    <a class="cancel-button" href='/'>Back To Home</a>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+.searchContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 60px;
+  margin: 8px 0px;
+  padding: 0px 16px;
+}
+
+.searchContainer input {
+  border: 0.5px solid lightgray;
+  outline: none;
+  background-color: #fafafa;
+  height: 40px;
+  width: 230px;
+  border-radius: 6px;
+  padding: 0px 10px;
+}
+
+.image {
+  height: 60px;
+  width: 55px;
+  object-fit: fill;
+  border-radius: 8px;
+}
