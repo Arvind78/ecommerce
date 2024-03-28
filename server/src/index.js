@@ -28,7 +28,13 @@ const reviewRouter = require('./routes/reviewRoute.js');
 const app = express();
 
 // Middleware setup
-app.use(cors());
+app.use(cors({
+  origin:'https://far-store.surge.sh',
+  methods: ['GET','HEAD','PUT','PATCH','POST','DELETE'],
+  allowedHeaders:['Content-Type','Authorization'],
+    credentials: true,
+
+}));
 app.use(helmet());
 app.use(cookieParser());
 app.use(xss());
