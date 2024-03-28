@@ -30,7 +30,7 @@ export const updateUserDetails = (data, id) => {
 
 // Function to handle user logout
 export const userLogout = (data) => {
-  return axios.post('api/user/logout', data);
+  return axios.post('https://shopnow-073b.onrender.com/api/user/login/api/user/logout', data);
 };
 
 // Function to update user profile image
