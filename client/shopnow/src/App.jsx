@@ -31,9 +31,10 @@ import AdminForget from './components/adminPanel/adminForgot/AdminForget';
 import AdminPasswordReset from './components/adminPanel/adminForgot/AdminPasswordReset';
 import { FaLongArrowAltUp } from 'react-icons/fa';
 import style from './App.module.css';
-import { MdRateReview } from 'react-icons/md';
-import UserReview from './components/popupModels/UserReviewModel';
+// import { MdRateReview } from 'react-icons/md';
+// import UserReview from './components/popupModels/UserReviewModel';
 import UserReviewModel from './components/popupModels/UserReviewModel';
+import { ToastContainer } from 'react-toastify';
 const App = () => {
   const [userReviewModel, setUserReviewModel] = useState(false);
   const role = localStorage.getItem('role');
@@ -105,6 +106,7 @@ const App = () => {
         )}
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <ToastContainer />
     </Suspense>
   );
 };

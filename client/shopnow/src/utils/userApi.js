@@ -2,13 +2,14 @@ import axios from 'axios';
 
 // Function to handle user login
 export const userLogin = (data) => {
-  return axios.post('https://far-store.surge.sh/api/user/login', data);
+  return axios.post('/api/user/login', data);
 };
 
 // Function to handle user registration
 export const userRegistration = (data) => {
   return axios.post('api/user/ragister', data);
 };
+
 
 // Function to send password reset email
 export const userForgetSendMail = (email) => {

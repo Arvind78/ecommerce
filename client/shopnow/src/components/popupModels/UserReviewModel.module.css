@@ -17,7 +17,7 @@ width: 100%;
 }
 
 .modalContent {
-  height: 230px;
+  height: fit-content;
   width: 260px;
   background-color: #0da487;
   background-image: url('../../assets/image/log-in-bg.png');
