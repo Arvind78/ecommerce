@@ -49,7 +49,7 @@ export const subscribeEmailHandler = (data) => {
 };
 
 export const logoutHandler = () => {
-  return axios.post('https://shopnow-073b.onrender.com/api/user/login',{withCredentials:true});
+  return axios.post('https://shopnow-073b.onrender.com/api/user/logout',{withCredentials:true});
 };
 
 export const createRevieHandler = (data) => {
