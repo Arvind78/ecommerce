@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Function to handle user login
 export const userLogin = (data) => {
-  return axios.post('/api/user/login', data,{withCredentials:true});
+  return axios.post('https://shopnow-073b.onrender.com/api/user/login', data,{withCredentials:true});
 };
 
 // Function to handle user registration
@@ -30,7 +30,7 @@ export const updateUserDetails = (data, id) => {
 
 // Function to handle user logout
 export const userLogout = (data) => {
-  return axios.post('/api/user/logout', data,{withCredentials:true});
+  return axios.post('https://shopnow-073b.onrender.com/api/user/logout', data);
 };
 
 // Function to update user profile image
@@ -40,16 +40,16 @@ export const userUpdateProfileImage = (data, id) => {
 
 // Function to handle contact form submission
 export const contactUsHandler = (data) => {
-  return axios.post('https://main--monumental-sunburst-da27eb.netlify.app/api/enquiry', data);
+  return axios.post('https://shopnow-073b.onrender.com/api/enquiry', data);
 };
 
 // Function to handle email subscription
 export const subscribeEmailHandler = (data) => {
-  return axios.post('https://main--monumental-sunburst-da27eb.netlify.app/api/subscribe', { email: data });
+  return axios.post('https://shopnow-073b.onrender.com/api/subscribe', { email: data });
 };
 
 export const logoutHandler = () => {
-  return axios.post('api/user/logout');
+  return axios.post('api/user/logout',{withCredentials:true});
 };
 
 export const createRevieHandler = (data) => {
