@@ -29,7 +29,7 @@ const app = express();
 
 // Middleware setup
 app.use(cors({
-  origin:['http://localhost:5173',''],
+  origin:['http://localhost:5173','https://main--monumental-sunburst-da27eb.netlify.app'],
   methods: ['GET','HEAD','PUT','PATCH','POST','DELETE'],
   allowedHeaders:['Content-Type','Authorization'],
     credentials: true,

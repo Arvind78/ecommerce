@@ -34,7 +34,7 @@ export const getProductsByCategory = (
 };
 
 export const getNewProducts = () => {
-  return axios.get(`api/products/new`);
+  return axios.get(`https://main--monumental-sunburst-da27eb.netlify.app/api/products/new`);
 };
 
 export const addProductReview = (reviewData) => {
