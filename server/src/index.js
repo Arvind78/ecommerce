@@ -29,7 +29,7 @@ const app = express();
 
 // Middleware setup
 app.use(cors({
-  origin:['http://localhost:5173','https://66059f4d90f50d382f7fab39--darling-cassata-58f64f.netlify.app']
+  origin:['http://localhost:5173','https://66059f4d90f50d382f7fab39--darling-cassata-58f64f.netlify.app'],
   methods: ['GET','HEAD','PUT','PATCH','POST','DELETE'],
   allowedHeaders:['Content-Type','Authorization'],
     credentials: true,
