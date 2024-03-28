@@ -35,7 +35,7 @@ function Sidebar() {
         <DrawerContent>
           <DrawerHeader borderBottomWidth="1px" padding="0%">
             <div className={styles.accountContainer}>
-              <Link to="/myaccount">
+              <Link to={(currentUser)?"/myaccount":"/login"}>
                 <div className={styles.account}>
                   <Avatar size="sm"></Avatar>
                   <div className={styles.accountInfo}>

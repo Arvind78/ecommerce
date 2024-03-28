@@ -6,7 +6,7 @@ import forgetImg from '../../assets/image/forgot.png';
 import { FaHome } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import PopupModel from './popupModel';
+import PopupModel from './PopupModel';
 import { ToastContainer, toast } from 'react-toastify';
 import { userForgetSendMail } from '../../utils/userApi';
 import Loading from 'react-loading';
