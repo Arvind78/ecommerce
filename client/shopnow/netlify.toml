@@ -1,11 +1,4 @@
 [[headers]]
-  for = ".js"
+  for = "/*.js"
     [headers.values]
       Content-Type = "application/javascript"
-
-[[headers]]
-  for = ".jsx"
-    [headers.values]
-      Content-Type = "application/javascript"
-
- 
