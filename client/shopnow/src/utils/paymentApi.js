@@ -9,7 +9,7 @@ export const createPayment = (
   total,
   deliveryAddress
 ) => {
-  return axios.post(`http://localhost:5173/api/pay`, {
+  return axios.post(`api/pay`, {
     userId,
     orderItem,
     subTotal,
@@ -21,13 +21,13 @@ export const createPayment = (
 };
 
 export const getCountOrder = (userId) => {
-  return axios.get(`http://localhost:5173/api/order/user/${userId}`);
+  return axios.get(`api/order/user/${userId}`);
 };
 
 export const trackOrder = (trackingId) => {
-  return axios.get(`http://localhost:5173/api/order/track/${trackingId}`);
+  return axios.get(`api/order/track/${trackingId}`);
 };
 
 export const getAllUserOrder = (userId) => {
-  return axios.get(`http://localhost:5173/api/order/users/${userId}`);
+  return axios.get(`api/order/users/${userId}`);
 };
