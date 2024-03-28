@@ -1,8 +1,8 @@
 /*.html
-  Content-Type: text/html
+  Content-Type: text/html; charset=utf-8
 
 /*.js
-  Content-Type: application/javascript
+  Content-Type: application/javascript; charset=utf-8
 
 /*.jsx
-  Content-Type: application/javascript
+  Content-Type: application/javascript; charset=utf-8
