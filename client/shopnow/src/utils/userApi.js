@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Function to handle user login
 export const userLogin = (data) => {
-  return axios.post('/api/user/login', data);
+  return axios.post('https://shopnow-073b.onrender.com/api/user/login', data);
 };
 
 // Function to handle user registration
@@ -45,7 +45,7 @@ export const contactUsHandler = (data) => {
 
 // Function to handle email subscription
 export const subscribeEmailHandler = (data) => {
-  return axios.post('api/subscribe', { email: data });
+  return axios.post('https://shopnow-073b.onrender.com/api/subscribe', { email: data });
 };
 
 export const logoutHandler = () => {
