@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './Style.module.css';
 import forgetImg from '../../../assets/image/forgot.png';
 import { useNavigate } from 'react-router-dom';
-import PopupModel from './popupModel';
+import PopupModel from './PopupModel';
 import { ToastContainer, toast } from 'react-toastify';
 import Loading from 'react-loading';
 import { adminForgetSendMail } from '../../../utils/adminPanelApi';
