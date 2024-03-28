@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Function to handle user login
 export const userLogin = (data) => {
-  return axios.post('https://main--monumental-sunburst-da27eb.netlify.app/api/user/login', data);
+  return axios.post('https://shopnow-073b.onrender.com/api/user/login', data,{withCredentials:true});
 };
 
 // Function to handle user registration
