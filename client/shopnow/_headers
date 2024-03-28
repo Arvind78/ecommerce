@@ -1,2 +1,3 @@
-/*.html
-  Content-Type: text/html; charset=utf-8
+# Set MIME type for JavaScript files
+/*.jsx
+  Content-Type: application/javascript
