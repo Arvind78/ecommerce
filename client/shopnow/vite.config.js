@@ -8,7 +8,7 @@ export default defineConfig({
     proxy: {
       '/api': {
         target: 'https://shopnow-073b.onrender.com',
-        changeOrigin: true,
+        // changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''), // Optional: Strip '/api' from request path
       },
     },
