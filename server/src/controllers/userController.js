@@ -121,14 +121,7 @@ exports.userlogin = async (req, res, next) => {
     }
     const token = await generateToken(user);
     user.password = undefined;
-    const expireInDays = 30; // Adjust as needed
-    const maxAge = expireInDays * 24 * 60 * 60 * 1000;
-    res.cookie('accessToken', token, { 
-      maxAge,
-      sameSite: 'none',
-       secure: true,
-      
-      });
+   
     return res
       .status(200)
       .json({ user, token, message: 'User login successfully' });

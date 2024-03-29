@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 
 const authenticateToken = (req, res, next) => {
   // Retrieve the access token from the cookies
-  const accessToken = req.cookies.accessToken;
+  const accessToken = req.headers?.authorization?.split(' ')[1];
 console.log("Cookies", accessToken)
   // Check if an access token is present
   if (!accessToken) {
@@ -17,7 +17,7 @@ console.log("Cookies", accessToken)
     const decodedToken = jwt.verify(
       accessToken,
       process.env.ACCESS_TOKEN_SECRET
-    );
+    )
 
     // Attach the decoded token data to the request object as 'user'
     req.user = decodedToken;

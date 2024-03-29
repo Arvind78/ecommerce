@@ -1,18 +1,20 @@
 import axios from 'axios';
 
+const baseUrl =`https://shopnow-073b.onrender.com`
+
 export const searchProductByInput = (input, page, limit) => {
   return axios.get(
-    `api/products/search?search=${input}&page=${page}&limit=${limit}`
+    `${baseUrl}/api/products/search?search=${input}&page=${page}&limit=${limit}`
   );
 };
 
 export const getProductById = (id) => {
-  return axios.get(`api/product/${id}`);
+  return axios.get(`${baseUrl}/api/product/${id}`);
 };
 
 export const getProducts = (page, limit, sort) => {
   return axios.get(
-    `api/product?page=${page}&limit=${limit}&sort=${sort}`
+    `${baseUrl}/api/product?page=${page}&limit=${limit}&sort=${sort}`
   );
 };
 
@@ -25,7 +27,7 @@ export const getProductsByCategory = (
   page,
   limit
 ) => {
-  return axios.get(`api/products/filters/?category=${
+  return axios.get(`${baseUrl}/api/products/filters/?category=${
     category || ''
   }&price=${price || ''}&rating=${rating || ''}&size=${size || ''}&sort=${
     sort || ''
@@ -34,19 +36,23 @@ export const getProductsByCategory = (
 };
 
 export const getNewProducts = () => {
-  return axios.get(`https://main--monumental-sunburst-da27eb.netlify.app/api/products/new`);
+  return axios.get(`${baseUrl}/api/products/new`);
 };
 
 export const addProductReview = (reviewData) => {
-  return axios.post(`api//product/review`, reviewData);
+  return axios.post(`${baseUrl}/api/product/review`,reviewData,{
+    headers:{
+      'Authorization': 'Bearer ' + localStorage.getItem('accessToken')
+    }
+  });
 };
 
 export const getProductReview = (id) => {
-  return axios.get(`api/product/review/${id}`);
+  return axios.get(`${baseUrl}/api/product/review/${id}`);
 };
 
 export const getProductBySubCategory = (subCategory, page, limit) => {
   return axios.get(
-    `api/products/subcategory?subCategory=${subCategory}&page=${page}&limit=${limit}`
+    `${baseUrl}/api/products/subcategory?subCategory=${subCategory}&page=${page}&limit=${limit}`
   );
 };

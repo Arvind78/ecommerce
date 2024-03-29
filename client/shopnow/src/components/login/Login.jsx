@@ -42,12 +42,15 @@ const Login = () => {
           toast.success(res.data.message, { theme: 'colored' });
           setIsLoading(false);
           dispatch(loginSuccess(res.data.user));
+          localStorage.setItem('accessToken', res.data.token);
           setTimeout(() => Navigate('/'), 2000);
         })
         .catch((err) => {
           setIsLoading(false);
           toast.error(err.response.data.message, { theme: 'colored' });
         });
+
+        
     }
   };
 

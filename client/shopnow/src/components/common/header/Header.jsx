@@ -69,6 +69,7 @@ const Header = () => {
     logoutHandler()
       .then((res) => {
         dispatch(logout());
+        localStorage.removeItem('accessToken')
         toast.success(res.data.message, {
           theme: 'colored',
         });

@@ -28,11 +28,7 @@ const reviewRouter = require('./routes/reviewRoute.js');
 const app = express();
 
 // Middleware setup
-app.use(cors({
-  origin: 'https://main--monumental-sunburst-da27eb.netlify.app', // Frontend URL
-  credentials: true, // Allow credentials (cookies)
-
-}));
+app.use(cors());
 app.use(helmet());
 app.use(cookieParser());
 app.use(xss());

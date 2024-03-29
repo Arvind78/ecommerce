@@ -25,8 +25,8 @@ exports.createPayment = (req, res, next) => {
       payment_method: 'paypal',
     },
     redirect_urls: {
-      return_url: 'http://localhost:5173/api/success',
-      cancel_url: 'http://localhost:5173/api/cancel',
+      return_url: 'https://shopnow-073b.onrender.com/api/success',
+      cancel_url: 'https://shopnow-073b.onrender.com/api/cancel',
     },
     transactions: [
       {
