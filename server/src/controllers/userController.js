@@ -125,7 +125,7 @@ exports.userlogin = async (req, res, next) => {
     const maxAge = expireInDays * 24 * 60 * 60 * 1000;
     res.cookie('accessToken', token, { 
       maxAge,
-      // sameSite: 'none',
+      sameSite: 'none',
       //  secure: true,
 
       });
