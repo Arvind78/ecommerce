@@ -127,7 +127,6 @@ exports.userlogin = async (req, res, next) => {
       maxAge,
       sameSite: 'none',
        secure: true,
-       domain: 'https://main--monumental-sunburst-da27eb.netlify.app'
 
       });
     return res
