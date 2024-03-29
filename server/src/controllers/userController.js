@@ -126,8 +126,8 @@ exports.userlogin = async (req, res, next) => {
     res.cookie('accessToken', token, { 
       maxAge,
       sameSite: 'none',
-      //  secure: true,
-
+       secure: true,
+      
       });
     return res
       .status(200)
