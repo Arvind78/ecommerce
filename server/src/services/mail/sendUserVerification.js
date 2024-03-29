@@ -10,7 +10,7 @@ async function sendVerificationEmail(email, name, id) {
       <p>Thank you for signing up!</p>
       <p>To verify your account and activate it, please click the link below:</p>
       <div  style="color:#fff;  margin:25px 2px">
-      <a href="http://localhost:8080/api/user/verification/${id}" style="background-color:green;padding:10px; border-radius:5px;color:#fff; text-decoration:none; text-align:center; margin:15px 0px;">Verify Your Account</a>
+      <a href="https://shopnow-073b.onrender.com/api/user/verification/${id}" style="background-color:green;padding:10px; border-radius:5px;color:#fff; text-decoration:none; text-align:center; margin:15px 0px;">Verify Your Account</a>
       </div>
       <p>If you did not create this account, you can safely ignore this email.</p>
       <p>Thank you.</p>

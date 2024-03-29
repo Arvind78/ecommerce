@@ -48,7 +48,7 @@ const sendCongratulationsEmail = (user) => {
           <p>Thank you for choosing ShopNow for your online shopping needs!</p>
           <p>Best regards,</p>
           <p>The ShopNow Team</p>
-          <a href="https://shopnow.com" class="button">Start Shopping</a>
+          <a href="https://splendid-kringle-1d7238.netlify.app/" class="button">Start Shopping</a>
         </div>
       </body>
     </html>

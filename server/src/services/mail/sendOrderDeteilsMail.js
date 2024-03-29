@@ -61,7 +61,7 @@ const sendOrderTrackingEmail = async (user, order) => {
               <p>You can track your order's progress using the following tracking ID:</p>
               <p><b>Tracking ID: ${order.trackingId}</b></p>
               <p>Click the link below to view your order details and track its progress:</p>
-              <a href="http://localhost:5173/myaccount?trackingId=${order.trackingId}">Track Your Order</a>
+              <a href="https://splendid-kringle-1d7238.netlify.app/myaccount?trackingId=${order.trackingId}">Track Your Order</a>
               <p>We appreciate your business and look forward to serving you again soon!</p>
               <p>Best regards,</p>
               <p>The ShopNow Team</p>
