@@ -29,8 +29,8 @@ const app = express();
 
 // Middleware setup
 app.use(cors({
-  origin:['http://localhost:5173','https://main--monumental-sunburst-da27eb.netlify.app'],
-    // credentials: true,
+  origin: 'https://main--monumental-sunburst-da27eb.netlify.app', // Frontend URL
+  credentials: true, // Allow credentials (cookies)
 
 }));
 app.use(helmet());
