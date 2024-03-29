@@ -21,7 +21,7 @@
   padding: 20px 10px;
   border-radius: 10px;
   width: 35%;
-  height: 80%;
+  height: fit-content;
 }
 
 .Heading {
