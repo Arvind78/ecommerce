@@ -126,7 +126,9 @@ exports.userlogin = async (req, res, next) => {
     res.cookie('accessToken', token, { 
       maxAge,
       sameSite: 'none',
-       secure: true
+       secure: true,
+       domain: 'https://main--monumental-sunburst-da27eb.netlify.app'
+
       });
     return res
       .status(200)

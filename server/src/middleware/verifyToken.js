@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 const authenticateToken = (req, res, next) => {
   // Retrieve the access token from the cookies
   const accessToken = req.cookies.accessToken;
-
+console.log("Cookies", accessToken)
   // Check if an access token is present
   if (!accessToken) {
     // Respond with unauthorized status and message if no token found
