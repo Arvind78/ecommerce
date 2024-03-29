@@ -27,7 +27,7 @@ userRouter.put(
   userProfileImgUpdate
 );
 userRouter.post('/user/reset/:token', userPasswordReset);
-// userRouter.post('/user/reset', userPasswordReset);
+userRouter.post('/user/reset', userPasswordReset);
 userRouter.post('/user/logout', userLogout);
 userRouter.get('/user/verification/:id', userVerification);
 
