@@ -58,7 +58,11 @@ const UpdateProfile = () => {
   const handleSubmit = async () => {
     try {
       const res = await updateUserDetails(formData, currentUser._id);
-      toast.success(res.data.message, { theme: 'colored' });
+      toast.success(res.data.message, {
+        theme: 'colored',
+        autoClose: 3000,
+        closeOnClick: true,
+      });
       dispatch(updateUser(res.data.user));
     } catch (error) {
       toast.error(error.response.data.message);

@@ -39,7 +39,11 @@ const Contect = () => {
       contactUsHandler(contactData)
         .then((res) => {
           setIsLoading(false);
-          toast.success(res.data.message, { theme: 'colored' });
+          toast.success(res.data.message, {
+            theme: 'colored',
+            autoClose: 3000,
+            closeOnClick: true,
+          });
 
           setContactData({
             name: '',
@@ -52,7 +56,11 @@ const Contect = () => {
         .catch((err) => {
           setIsLoading(false);
 
-          toast.error(err.response.data.message, { theme: 'colored' });
+          toast.error(err.response.data.message, {
+            theme: 'colored',
+            autoClose: 3000,
+            closeOnClick: true,
+          });
           return false;
         });
     }

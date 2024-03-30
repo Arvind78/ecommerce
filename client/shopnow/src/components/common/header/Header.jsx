@@ -69,15 +69,19 @@ const Header = () => {
     logoutHandler()
       .then((res) => {
         dispatch(logout());
-        localStorage.removeItem('accessToken')
+        localStorage.removeItem('accessToken');
         toast.success(res.data.message, {
           theme: 'colored',
+          autoClose: 3000,
+          closeOnClick: true,
         });
-        Navigate('/');
+        setTimeout(() => Navigate('/'), 4000);
       })
       .catch((err) => {
         return toast.error(err.response.data.message, {
           theme: 'colored',
+          autoClose: 3000,
+          closeOnClick: true,
         });
       });
   };

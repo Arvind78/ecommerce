@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-const baseUrl =`https://shopnow-073b.onrender.com`
-
+const baseUrl = `https://shopnow-073b.onrender.com`;
 
 export const dashboardData = () => {
   return axios.get(`${baseUrl}/api/admin/dashboad`);
@@ -26,10 +25,7 @@ export const adminForgetSendMail = (email) => {
 };
 
 export const adminForgetPassword = (data, token) => {
-  return axios.put(
-    `${baseUrl}/api/admin/reset-password/${token}`,
-    data
-  );
+  return axios.put(`${baseUrl}/api/admin/reset-password/${token}`, data);
 };
 
 export const fetchUserOrder = (id) => {

@@ -33,7 +33,11 @@ const AdminLogin = () => {
       setIsLoading(true);
       adminLogin(loginData)
         .then((res) => {
-          toast.success(res.data.message, { theme: 'colored' });
+          toast.success(res.data.message, {
+            theme: 'colored',
+            autoClose: 3000,
+            closeOnClick: true,
+          });
           setIsLoading(false);
           console.log(res.data.admin);
           sessionStorage.setItem(
@@ -51,7 +55,11 @@ const AdminLogin = () => {
         })
         .catch((err) => {
           setIsLoading(false);
-          toast.error(err.response.data.message, { theme: 'colored' });
+          toast.error(err.response.data.message, {
+            theme: 'colored',
+            autoClose: 3000,
+            closeOnClick: true,
+          });
         });
     }
   };

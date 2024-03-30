@@ -39,18 +39,24 @@ const Login = () => {
       setIsLoading(true);
       userLogin(loginData)
         .then((res) => {
-          toast.success(res.data.message, { theme: 'colored' });
+          toast.success(res.data.message, {
+            theme: 'colored',
+            autoClose: 3000,
+            closeOnClick: true,
+          });
           setIsLoading(false);
           dispatch(loginSuccess(res.data.user));
           localStorage.setItem('accessToken', res.data.token);
-          setTimeout(() => Navigate('/'), 2000);
+          setTimeout(() => Navigate('/'), 4000);
         })
         .catch((err) => {
           setIsLoading(false);
-          toast.error(err.response.data.message, { theme: 'colored' });
+          toast.error(err.response.data.message, {
+            theme: 'colored',
+            autoClose: 3000,
+            closeOnClick: true,
+          });
         });
-
-        
     }
   };
 

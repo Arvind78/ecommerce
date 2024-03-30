@@ -26,13 +26,21 @@ const PasswordReset = () => {
       dispatch(logout());
       userForgetPassword(data, id)
         .then((res) => {
+          toast.success(res.data.message, {
+            theme: 'colored',
+            autoClose: 3000,
+            closeOnClick: true,
+          });
           setIsLoading(false);
-          toast.success(res.data.message, { theme: 'colored' });
-          Navigate('/login');
+          setTimeout(() => Navigate('/login'), 4000);
         })
         .catch((err) => {
           setIsLoading(false);
-          toast.error(err.response.data.message, { theme: 'colored' });
+          toast.error(err.response.data.message, {
+            theme: 'colored',
+            autoClose: 3000,
+            closeOnClick: true,
+          });
           return false;
         });
     }

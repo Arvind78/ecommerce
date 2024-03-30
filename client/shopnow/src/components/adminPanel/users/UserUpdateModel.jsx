@@ -42,15 +42,27 @@ const UserUpdateModel = ({ data }) => {
       formData.email === '' ||
       formData.phone === ''
     ) {
-      return toast.error('Please fill all fields!', { theme: 'colored' });
+      return toast.error('Please fill all fields!', {
+        autoClose: 3000,
+        theme: 'colored',
+        closeOnClick: true,
+      });
     } else {
       setLoading(true);
       updateUserDetails(formData, data?._id)
         .then((res) => {
-          return toast.success(res.data.message, { theme: 'colored' });
+          return toast.success(res.data.message, {
+            autoClose: 3000,
+            theme: 'colored',
+            closeOnClick: true,
+          });
         })
         .catch((err) => {
-          return toast.error(err.response.data.message, { theme: 'colored' });
+          return toast.error(err.response.data.message, {
+            autoClose: 3000,
+            theme: 'colored',
+            closeOnClick: true,
+          });
         })
         .finally(() => {
           return setLoading(false);

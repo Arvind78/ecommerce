@@ -18,26 +18,56 @@ const { SubMenu } = Menu;
 import styles from './style.module.css';
 import { SiAboutdotme } from 'react-icons/si';
 import { TfiHeadphoneAlt } from 'react-icons/tfi';
-import { IoMdLogOut } from 'react-icons/io';
+import { IoIosLogIn, IoMdLogIn, IoMdLogOut } from 'react-icons/io';
 import { CgEditShadows } from 'react-icons/cg';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
 import { GoHeart } from 'react-icons/go';
+import { logoutHandler } from '../../../utils/userApi';
+import { logout } from '../../../store/userSlice';
+import { ToastContainer, toast } from 'react-toastify';
 function Sidebar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { currentUser } = useSelector((state) => state.user);
   const Navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const handleLogout = () => {
+    logoutHandler()
+      .then((res) => {
+        dispatch(logout());
+        localStorage.removeItem('accessToken');
+        toast.success(res.data.message, {
+          theme: 'colored',
+          autoClose: 3000,
+          closeOnClick: true,
+        });
+        setTimeout(() => Navigate('/'), 4000);
+      })
+      .catch((err) => {
+        return toast.error(err.response.data.message, {
+          theme: 'colored',
+          autoClose: 3000,
+          closeOnClick: true,
+        });
+      });
+  };
+
   return (
     <>
-      <RiMenuUnfoldLine size={25} onClick={onOpen} />
-
+      <RiMenuUnfoldLine
+        size={25}
+        style={{ cursor: 'pointer' }}
+        onClick={onOpen}
+      />
+      <ToastContainer />
       <Drawer placement={'left'} onClose={onClose} isOpen={isOpen}>
         <DrawerContent>
           <DrawerHeader borderBottomWidth="1px" padding="0%">
             <div className={styles.accountContainer}>
-              <Link to={(currentUser)?"/myaccount":"/login"}>
+              <Link to={currentUser ? '/myaccount' : '/login'}>
                 <div className={styles.account}>
-                  <Avatar size="sm"></Avatar>
+                  <Avatar src={currentUser?.profileImg} size="sm"></Avatar>
                   <div className={styles.accountInfo}>
                     <h3>Hi , {currentUser?.name || 'User'}</h3>
                     <span>My Account</span>
@@ -61,7 +91,7 @@ function Sidebar() {
               <Menu.Item
                 key="product"
                 onClick={() => Navigate('/product')}
-                icon={<CgEditShadows />}
+                icon={<CgEditShadows size={16} />}
               >
                 Product
               </Menu.Item>
@@ -137,7 +167,19 @@ function Sidebar() {
                 Contect Us
               </Menu.Item>
 
-              <Menu.Item key="logout" icon={<IoMdLogOut />}>
+              <Menu.Item
+                key="login"
+                onClick={() => Navigate('/login')}
+                icon={<IoMdLogIn size={16} />}
+              >
+                Login
+              </Menu.Item>
+
+              <Menu.Item
+                key="logout"
+                onClick={handleLogout}
+                icon={<IoMdLogOut size={16} />}
+              >
                 Logout
               </Menu.Item>
 

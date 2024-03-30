@@ -38,7 +38,6 @@ const UserReviewModel = ({ model, toggle }) => {
   };
   return (
     <div className={styles.userReviewModel}>
-      
       <section onClick={toggle}>
         <MdRateReview />
       </section>

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl =`https://shopnow-073b.onrender.com`
+const baseUrl = `https://shopnow-073b.onrender.com`;
 
 export const searchProductByInput = (input, page, limit) => {
   return axios.get(
@@ -40,10 +40,10 @@ export const getNewProducts = () => {
 };
 
 export const addProductReview = (reviewData) => {
-  return axios.post(`${baseUrl}/api/product/review`,reviewData,{
-    headers:{
-      'Authorization': 'Bearer ' + localStorage.getItem('accessToken')
-    }
+  return axios.post(`${baseUrl}/api/product/review`, reviewData, {
+    headers: {
+      Authorization: 'Bearer ' + localStorage.getItem('accessToken'),
+    },
   });
 };
 

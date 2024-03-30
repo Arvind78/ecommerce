@@ -35,7 +35,7 @@ const MyAccount = () => {
     logoutHandler()
       .then((res) => {
         dispatch(logout());
-        localStorage.removeItem('accessToken')
+        localStorage.removeItem('accessToken');
 
         toast.success(res.data.message, {
           theme: 'colored',

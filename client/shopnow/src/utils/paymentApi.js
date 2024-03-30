@@ -1,8 +1,6 @@
 import axios from 'axios';
 
-
-const baseUrl =`https://shopnow-073b.onrender.com`
-
+const baseUrl = `https://shopnow-073b.onrender.com`;
 
 export const createPayment = (
   userId,
@@ -13,17 +11,23 @@ export const createPayment = (
   total,
   deliveryAddress
 ) => {
-  return axios.post(`${baseUrl}/api/pay`, {
-    userId,
-    orderItem,
-    subTotal,
-    tax,
-    shipping,
-    total,
-    deliveryAddress,
-  },{ headers:{
-    'Authorization': 'Bearer ' + localStorage.getItem('accessToken')
-  }});
+  return axios.post(
+    `${baseUrl}/api/pay`,
+    {
+      userId,
+      orderItem,
+      subTotal,
+      tax,
+      shipping,
+      total,
+      deliveryAddress,
+    },
+    {
+      headers: {
+        Authorization: 'Bearer ' + localStorage.getItem('accessToken'),
+      },
+    }
+  );
 };
 
 export const getCountOrder = (userId) => {

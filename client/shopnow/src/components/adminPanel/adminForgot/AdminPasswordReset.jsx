@@ -26,10 +26,14 @@ const AdminPasswordReset = () => {
       adminForgetPassword(data, token)
         .then((res) => {
           setIsLoading(false);
-          toast.success(res.data.message, { theme: 'colored' });
+          toast.success(res.data.message, {
+            theme: 'colored',
+            autoClose: 3000,
+            closeOnClick: true,
+          });
           setTimeout(() => {
             Navigate('/');
-          }, 3000);
+          }, 4000);
         })
         .catch((err) => {
           setIsLoading(false);

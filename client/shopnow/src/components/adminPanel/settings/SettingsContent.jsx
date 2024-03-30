@@ -33,14 +33,22 @@ const SettingsContent = () => {
     });
     adminUpdateImage(isAdmin?._id, image)
       .then((res) => {
-        toast.success(res.data.message, { theme: 'colored' });
+        toast.success(res.data.message, {
+          theme: 'colored',
+          autoClose: 3000,
+          closeOnClick: true,
+        });
         sessionStorage.setItem('isAdminLogin', JSON.stringify(res.data.data));
         setLoading({
           type: '',
         });
       })
       .catch((err) => {
-        toast.error(err.response.data.message, { theme: 'colored' });
+        toast.error(err.response.data.message, {
+          theme: 'colored',
+          autoClose: 3000,
+          closeOnClick: true,
+        });
         setLoading({
           type: '',
         });
@@ -54,14 +62,22 @@ const SettingsContent = () => {
     });
     adminUpdateImage(isAdmin?._id, formData)
       .then((res) => {
-        toast.success(res.data.message, { theme: 'colored' });
+        toast.success(res.data.message, {
+          theme: 'colored',
+          autoClose: 3000,
+          closeOnClick: true,
+        });
         sessionStorage.setItem('isAdminLogin', JSON.stringify(res.data.data));
         setLoading({
           type: '',
         });
       })
       .catch((err) => {
-        toast.error(err.response.data.message, { theme: 'colored' });
+        toast.error(err.response.data.message, {
+          theme: 'colored',
+          autoClose: 3000,
+          closeOnClick: true,
+        });
         setLoading({
           type: '',
         });

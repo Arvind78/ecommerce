@@ -56,13 +56,21 @@ const AdminSignup = () => {
     setIsLoading(true);
     adminSignup(ragisterData)
       .then((res) => {
-        toast.success(res.data.message, { theme: 'colored' }); // Success toast
+        toast.success(res.data.message, {
+          theme: 'colored',
+          autoClose: 3000,
+          closeOnClick: true,
+        }); // Success toast
         setIsLoading(false);
-        setTimeout(() => Navigate('/'), 3000);
+        setTimeout(() => Navigate('/'), 4000);
       })
       .catch((err) => {
         setIsLoading(false);
-        toast.error(err.response.data.message, { theme: 'colored' }); // Error toast
+        toast.error(err.response.data.message, {
+          theme: 'colored',
+          autoClose: 3000,
+          closeOnClick: true,
+        }); // Error toast
       });
   };
 

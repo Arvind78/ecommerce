@@ -37,11 +37,14 @@ const Forget = () => {
           setTimeout(() => {
             modelOpenHandler();
           }, 1000);
-          // toast.success(res.data.message,{theme:"colored"})
         })
         .catch((err) => {
           setIsLoading(false);
-          toast.error(err.response.data.message, { theme: 'colored' });
+          toast.error(err.response.data.message, {
+            theme: 'colored',
+            autoClose: 3000,
+            closeOnClick: true,
+          });
           return false;
         });
     }

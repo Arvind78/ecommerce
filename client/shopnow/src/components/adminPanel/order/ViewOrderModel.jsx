@@ -37,23 +37,6 @@ const ViewOrderModal = ({ id, isOpen, setIsOpen }) => {
     }
   }, [id, isOpen]);
 
-  // if (isLoading) {
-  //   return <div style={{
-  //     display: 'flex',
-  //     justifyContent: 'center',
-  //     alignItems: 'center',
-  //     height: '80vh'
-  //   }}>
-  //     <Spinner
-  //         thickness='4px'
-  //         speed='0.50s'
-  //         emptyColor='gray.200'
-  //         color='#38A169'
-  //         size='lg'
-  //     />
-  //   </div>;
-  // }
-
   const handleDeleteOrder = (id) => {
     deleteOrderId(id)
       .then((res) => {

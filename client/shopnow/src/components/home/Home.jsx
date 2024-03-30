@@ -124,7 +124,6 @@ const Home = () => {
       });
   }, []);
 
-  console.log(newProducts);
   return (
     <div className={styles.Container}>
       <Header />

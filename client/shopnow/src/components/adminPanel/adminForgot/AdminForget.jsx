@@ -35,7 +35,11 @@ const AdminForget = () => {
         })
         .catch((err) => {
           setIsLoading(false);
-          toast.error(err.response.data.message, { theme: 'colored' });
+          toast.error(err.response.data.message, {
+            theme: 'colored',
+            autoClose: 3000,
+            closeOnClick: true,
+          });
           return false;
         });
     }
