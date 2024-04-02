@@ -32,7 +32,7 @@ const Search = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState('');
   const limit = 5;
-  const searchProductHandler = (() => {
+  const searchProductHandler = useCallback(() => {
     if (!searchInput) {
       toast.error('Please enter a valid search');
       return false;
