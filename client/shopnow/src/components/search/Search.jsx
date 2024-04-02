@@ -50,7 +50,7 @@ const Search = () => {
           return false;
         });
     }
-  }, [currentPage]);
+  }, [currentPage,searchInput]);
 
   useEffect(() => {
     productData.find((item) => item._id === wishlist._id) &&
