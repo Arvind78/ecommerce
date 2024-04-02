@@ -53,6 +53,10 @@ function Sidebar() {
       });
   };
 
+  const categoryChange=(path)=>{
+    window.location.href=path
+  }
+
   return (
     <>
       <RiMenuUnfoldLine
@@ -106,7 +110,7 @@ function Sidebar() {
               <SubMenu key="SubMenu" icon={<BiCategoryAlt />} title="Category">
                 <Menu.Item
                   key="electronics"
-                  onClick={() => Navigate('/product?category=electronics')}
+                  onClick={() => categoryChange('/product?category=electronics')}
                 >
                   {' '}
                   Electronics{' '}
@@ -114,7 +118,7 @@ function Sidebar() {
 
                 <Menu.Item
                   key="sports"
-                  onClick={() => Navigate('/product?category=sports')}
+                  onClick={() => categoryChange('/product?category=sports')}
                 >
                   {' '}
                   Sports{' '}
@@ -122,7 +126,7 @@ function Sidebar() {
 
                 <Menu.Item
                   key="accessories"
-                  onClick={() => Navigate('/product?category=accessories')}
+                  onClick={() => categoryChange('/product?category=accessories')}
                 >
                   {' '}
                   Accessories{' '}
@@ -130,7 +134,7 @@ function Sidebar() {
 
                 <Menu.Item
                   key="beauty"
-                  onClick={() => Navigate('/product?category=beauty')}
+                  onClick={() => categoryChange('/product?category=beauty')}
                 >
                   {' '}
                   Beauty{' '}
@@ -138,7 +142,7 @@ function Sidebar() {
 
                 <Menu.Item
                   key="fashion"
-                  onClick={() => Navigate('/product?category=fashion')}
+                  onClick={() => categoryChange('/product?category=fashion')}
                 >
                  
                   Fashion{' '}
@@ -146,7 +150,7 @@ function Sidebar() {
 
                 <Menu.Item
                   key="furniture"
-                  onClick={() => Navigate('/product?category=furniture')}
+                  onClick={() => categoryChange('/product?category=furniture')}
                 >
                   {' '}
                   Furniture{' '}
