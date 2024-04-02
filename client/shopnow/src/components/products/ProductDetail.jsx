@@ -44,12 +44,16 @@ const ProductDetail = () => {
   const [review, setReview] = useState([]);
   const [subCategoryData, setSubCategoryData] = useState([]);
   const [loading, setLoading] = useState(false);
-  const limit = 1;
+  const [avgRating,setAvgRating]=useState(0);
+  const [reviewCount,setReviewCount]=useState({}); 
+  const limit = 5;
 
   const getReview = async () => {
     try {
       const res = await getProductReview(id);
       setReview(res.data.reviews);
+      setAvgRating(res.data.avgRating);
+      setReviewCount(res.data.ratingCounts);
     } catch (err) {
       console.error(err);
     }
@@ -162,7 +166,7 @@ const ProductDetail = () => {
                 <div className={styles.reviewInfo}>
                   <div className={styles.addReview}>
                     <div className={styles.AvarageReview}>
-                      <h1>3.45</h1>
+                      <h1>{avgRating}</h1>
                       <Rate value={1} count={1}></Rate>
                       <span>5 Rating</span>
                     </div>
@@ -171,36 +175,36 @@ const ProductDetail = () => {
                       <div className={styles.rateContainer}>
                         <span>5</span>
                         <Rate value={1} count={1} color="#000"></Rate>
-                        <Progress percent={100} showInfo={false} />
+                        <Progress percent={reviewCount['5'] ||0 } showInfo={false} />
 
-                        <span>2</span>
+                        <span>{reviewCount['5'] ||0 }</span>
                       </div>
 
                       <div className={styles.rateContainer}>
                         <span>4</span>
                         <Rate value={1} count={1} color="#000"></Rate>
-                        <Progress percent={100} showInfo={false} />
-                        <span>2</span>
+                        <Progress percent={reviewCount['4'] || 0 } showInfo={false} />
+                        <span>{reviewCount['4'] ||0 }</span>
                       </div>
 
                       <div className={styles.rateContainer}>
                         <span>3</span>
-                        <Rate value={1} count={1} color="#000"></Rate>  <Progress percent={100} showInfo={false} />
+                        <Rate value={1} count={1} color="#000"></Rate>  <Progress percent={reviewCount['3'] ||0 } showInfo={false} />
 
-                        <span>2</span>
+                        <span>{reviewCount['3'] ||0 }</span>
                       </div>
 
                       <div className={styles.rateContainer}>
                         <span>2</span>
-                        <Rate value={1} count={1} color="#000"></Rate> <Progress percent={100} showInfo={false} />
+                        <Rate value={1} count={1} color="#000"></Rate> <Progress percent={reviewCount['2'] ||0 } showInfo={false} />
 
-                        <span>2</span>
+                        <span>{reviewCount['2'] || 0 }</span>
                       </div>
 
                       <div className={styles.rateContainer}>
                         <span>1</span>
-                        <Rate value={1} count={1} color="#000"></Rate><Progress percent={100} showInfo={false} />
-                        <span>2</span>
+                        <Rate value={1} count={1} color="#000"></Rate><Progress percent={reviewCount['1'] || 0} showInfo={false} />
+                        <span>{reviewCount['1'] || 0 }</span>
                       </div>
 
                       <div className={styles.newAddReview}>
