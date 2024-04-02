@@ -10,7 +10,6 @@ import {
 import { RiMenuUnfoldLine } from 'react-icons/ri';
 import { MdOutlineSettings } from 'react-icons/md';
 import { Menu } from 'antd';
-import { AppstoreOutlined } from '@ant-design/icons';
 import { AiOutlineHome } from 'react-icons/ai';
 import { BiCategoryAlt } from 'react-icons/bi';
 import { MdOutlineContacts } from 'react-icons/md';
@@ -18,7 +17,7 @@ const { SubMenu } = Menu;
 import styles from './style.module.css';
 import { SiAboutdotme } from 'react-icons/si';
 import { TfiHeadphoneAlt } from 'react-icons/tfi';
-import { IoIosLogIn, IoMdLogIn, IoMdLogOut } from 'react-icons/io';
+import { IoMdLogIn, IoMdLogOut } from 'react-icons/io';
 import { CgEditShadows } from 'react-icons/cg';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, Link } from 'react-router-dom';
@@ -77,10 +76,11 @@ function Sidebar() {
                     <span>My Account</span>
                   </div>
                 </div>
-              </Link>
+             
               <IconButton rounded={80} size="sm">
                 <MdOutlineSettings size={20} />
               </IconButton>
+              </Link>
             </div>
           </DrawerHeader>
           <DrawerBody>
