@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import styles from './Style.module.css';
 import { trackOrder } from './../../../utils/paymentApi';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useNavigate } from 'react-router-dom';
 import moment from 'moment';
 import Login from '../../login/Login';
 const TrackOrder = () => {
+  const Navigate= useNavigate();
   const [searchParams] = useSearchParams();
   const accessToken = localStorage.getItem('accessToken');
   const [order, setOrder] = useState({});
@@ -12,18 +13,20 @@ const TrackOrder = () => {
   const [trackingId, setTrackingId] = useState(trackId);
 
   const trackOrderHander = () => {
+    if(accessToken){
     trackOrder(trackingId)
       .then((res) => {
-        console.log(res.data.data);
         setOrder(res.data.data);
       })
       .catch((err) => {
         console.log(err);
       });
+    }else{
+      Navigate("/login")
+    }
   };
   return (
     <>
-      {accessToken ? (
         <div>
           <h2>Track Order</h2>
           <div className={styles.TrackOrder}>
@@ -58,9 +61,6 @@ const TrackOrder = () => {
             </div>
           </div>
         </div>
-      ) : (
-        <Login />
-      )}
     </>
   );
 };

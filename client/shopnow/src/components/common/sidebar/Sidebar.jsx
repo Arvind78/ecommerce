@@ -76,7 +76,8 @@ function Sidebar() {
                     <span>My Account</span>
                   </div>
                 </div>
-             
+                </Link>
+              <Link to={currentUser ? '/myaccount' : '/login'}>
               <IconButton rounded={80} size="sm">
                 <MdOutlineSettings size={20} />
               </IconButton>
