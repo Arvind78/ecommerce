@@ -32,7 +32,7 @@ const Search = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState('');
   const limit = 5;
-  const searchProductHandler = useMemo(() => {
+  const searchProductHandler = useCallback(() => {
     if (!searchInput) {
       toast.error('Please enter a valid search');
       return false;
@@ -93,7 +93,6 @@ const Search = () => {
                 <div className={styles.priceSection}>
                   <div>
                     <span>$ {product?.price}</span>
-                    <span>{/* <del>$29.99</del> */}</span>
                   </div>
                   <div>
                     {isWishListItem ? (
