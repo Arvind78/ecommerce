@@ -70,7 +70,7 @@ exports.addProduct = async (req, res, next) => {
  */
 exports.getProducts = async (req, res, next) => {
   const { page, limit, sort } = req.query;
-  const itemsPerPage = parseInt(limit);
+  const itemsPerPage = parseInt(limit) || 10;
   const pageNumber = page ? parseInt(page) : 1;
   const skip = (pageNumber - 1) * itemsPerPage;
   const sorting = sort === 'desc' ? -1 : 1;

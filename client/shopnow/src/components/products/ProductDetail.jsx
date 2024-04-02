@@ -11,7 +11,7 @@ import {
   TabPanel,
   Spinner,
 } from '@chakra-ui/react';
-import { Rate } from 'antd';
+import { Rate,Progress} from 'antd';
 import { Link, useParams } from 'react-router-dom';
 import { GoHeart } from 'react-icons/go';
 import { IoHeart } from 'react-icons/io5';
@@ -171,35 +171,35 @@ const ProductDetail = () => {
                       <div className={styles.rateContainer}>
                         <span>5</span>
                         <Rate value={1} count={1} color="#000"></Rate>
-                        <input type="range" max={5} value={2} min={1} />
+                        <Progress percent={100} showInfo={false} />
+
                         <span>2</span>
                       </div>
 
                       <div className={styles.rateContainer}>
                         <span>4</span>
                         <Rate value={1} count={1} color="#000"></Rate>
-                        <input type="range" max={5} value={2} min={1} />
+                        <Progress percent={100} showInfo={false} />
                         <span>2</span>
                       </div>
 
                       <div className={styles.rateContainer}>
                         <span>3</span>
-                        <Rate value={1} count={1} color="#000"></Rate>
-                        <input type="range" max={5} value={2} min={1} />
+                        <Rate value={1} count={1} color="#000"></Rate>  <Progress percent={100} showInfo={false} />
+
                         <span>2</span>
                       </div>
 
                       <div className={styles.rateContainer}>
                         <span>2</span>
-                        <Rate value={1} count={1} color="#000"></Rate>
-                        <input type="range" max={5} value={2} min={1} />
+                        <Rate value={1} count={1} color="#000"></Rate> <Progress percent={100} showInfo={false} />
+
                         <span>2</span>
                       </div>
 
                       <div className={styles.rateContainer}>
                         <span>1</span>
-                        <Rate value={1} count={1} color="#000"></Rate>
-                        <input type="range" max={5} value={2} min={1} />
+                        <Rate value={1} count={1} color="#000"></Rate><Progress percent={100} showInfo={false} />
                         <span>2</span>
                       </div>
 

@@ -13,7 +13,7 @@
 /* Styles for the login heading */
 .loginHeading {
   height: 70px;
-  display: flex;
+  display: flex
   justify-content: space-between;
   align-items: center;
   padding: 0px 70px;

@@ -220,17 +220,20 @@
 }
 
 .userListReview::-webkit-scrollbar-thumb {
-  background-color: #888;
+  background-color: #aee9dd48;
   /* Set color of thumb */
   border-radius: 4px;
   /* Add some border radius */
 }
 
 .userListReview::-webkit-scrollbar-track {
-  background-color: #ddd;
+  background-color: #0da486a6;
+  border-radius:8px;
   /* Set color of track */
 }
-
+.rateContainer input[type="range"]{
+  outline: none;
+}
 .otherInfo {
   width: 500px;
   height: auto;
@@ -417,11 +420,6 @@
   align-items: center;
 }
 
-@media (max-width: 1140px) {
-}
-
-@media (max-width: 1024px) {
-}
 
 @media (max-width: 900px) {
   .product {
@@ -459,15 +457,16 @@
 
   .productImg {
     width: 23%;
-    background-color: aquamarine;
+    background-color: trabsparent;
     height: auto;
   }
 
   .productImg img {
     width: 100%;
-    background-color: aquamarine;
+    background-color: trabsparent;
     height: auto;
     border-radius: 8px;
+    object-fit: contain;
   }
 
   .otherInfo {
@@ -541,11 +540,13 @@
 
   .addReview {
     width: 100%;
+    /* height:200px; */
     border: none;
   }
 
   .userListReview {
     width: 100%;
+    height:200px;
     border: none;
   }
 

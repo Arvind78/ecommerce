@@ -97,7 +97,7 @@ function Sidebar() {
               </Menu.Item>
 
               <Menu.Item
-                key="product"
+                key="wishlist"
                 onClick={() => Navigate('/wishlist')}
                 icon={<GoHeart />}
               >
@@ -140,7 +140,7 @@ function Sidebar() {
                   key="fashion"
                   onClick={() => Navigate('/product?category=fashion')}
                 >
-                  {' '}
+                 
                   Fashion{' '}
                 </Menu.Item>
 

@@ -1,6 +1,7 @@
 const productModel = require('../models/productModel');
 const productReviewModel = require('../models/productReviewModel');
 const error = require('../utils/error');
+const mongoose = require('mongoose');
 
 /**
  * Controller function to create a new product review.
@@ -60,40 +61,40 @@ exports.getAllProductReview = async (req, res, next) => {
       .find({ productId: id })
       .populate('userId', 'name profileImg');
 
-    // Aggregate to count ratings and calculate average rating
-    const ratingStats = await productReviewModel.aggregate([
-      { $match: { productId: id } },
-      // {
-      //     $group: {
-      //         _id: "$rating",
-      //         count: { $sum: 1 }
-      //     }
-      // },
-      // {
-      //     $group: {
-      //         _id: null,
-      //         ratings: { $push: { rating: "$_id", count: "$count" } },
-      //         average: { $avg: "$_id" }
-      //     }
-      // }
-    ]);
-
-    // Extract ratings counts from aggregation result
-    console.log(ratingStats);
-    const ratingCounts = {};
-    if (ratingStats[0] && ratingStats[0].ratings) {
-      ratingStats[0].ratings.forEach((rating) => {
-        ratingCounts[rating.rating] = rating.count;
-      });
-    }
-
-    // Calculate average rating
-    const averageRating = ratingStats[0]?.average || 0; // Default to 0 if no reviews exist
+  // Aggregate to count ratings and calculate average rating
+  const ratingStats = await productReviewModel.aggregate([
+    { $match: { productId: new mongoose.Types.ObjectId(id) } },
+    {
+      $group: {
+        _id: '$rating',
+        count: { $sum: 1 },
+      },
+    },
+  ]);
+  
+  let totalRatings = 0;
+  let totalCount = 0;
+  for (const stat of ratingStats) {
+    totalRatings += stat._id * stat.count;
+    totalCount += stat.count;
+  }
+  
+  const avgRatingOutOf5 = totalCount > 0 ? (totalRatings / totalCount) : 0;
+  
+  console.log("Average Rating (Out of 5):", avgRatingOutOf5.toFixed(2));
+  
+  console.log("Rating Counts:");
+  const ratingCounts = {};
+  for (const stat of ratingStats) {
+    console.log(`Rating ${stat._id}: ${stat.count}`);
+    ratingCounts[stat._id] = stat.count;
+  }
+  
     res.status(200).json({
       success: true,
       reviews,
       ratingCounts,
-      averageRating,
+      avgRating:avgRatingOutOf5 
     });
   } catch (error) {
     next(error);
